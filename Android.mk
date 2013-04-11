@@ -30,9 +30,6 @@ LOCAL_CFLAGS += \
 endif
 LOCAL_CFLAGS+= -O2
 
-# Workaround for gcc bug last verified in 4.6-2011.10
-LOCAL_CFLAGS+=$(call cc-option,-fno-modulo-sched)
-
 LOCAL_C_INCLUDES:= \
 	$(LOCAL_PATH)/Tremolo
 
